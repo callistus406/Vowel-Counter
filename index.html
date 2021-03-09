@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="./css/materialize.min.css"  media="screen,projection"/>
+
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <div class="row heading">
+      <h5>Vowel Counter</h5>
+    </div>
+   <div class="row input">
+    <div class=" row input-field col s6 col l8">
+      <input id="vowel" type="text" class="validate">
+      <label for="vowel">Please Type Something</label>
+    </div>
+  <div class="row  center" >
+    <button class="btn waves-effect waves-light" type="submit" id="displayBtn" name="action">Submit
+      <i class="material-icons right">send</i>
+    </button>
+  </div>
+
+   </div>
+   <div class="row display">
+    <h6 >No of vowels: <span id="vowelsCount"></span></h6>
+    <h6 > 
+      Vowels : <span id="displayVowels"> </span>
+    </h6>
+   </div>
+  </div>
+  <script src="./js/materialize.min.js"></script>
+  <script src="./js/script.js"></script>
+
+</body>
+</html>
