@@ -1,40 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/style.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link type="text/css" rel="stylesheet" href="./css/materialize.min.css"  media="screen,projection"/>
+  <link type="text/css" rel="stylesheet" href="./css/materialize.min.css" media="screen,projection" />
 
   <title>Document</title>
 </head>
+
 <body>
   <div class="container">
-    <div class="row heading">
-      <h5>Vowel Counter</h5>
-    </div>
-   <div class="row input">
-    <div class=" row input-field col s6 col l8">
-      <input id="vowel" type="text" class="validate">
-      <label for="vowel">Please Type Something</label>
-    </div>
-  <div class="row  center" >
-    <button class="btn waves-effect waves-light" type="submit" id="displayBtn" name="action">Submit
-      <i class="material-icons right">send</i>
-    </button>
-  </div>
+    <div class="content">
+      <div class="row heading">
+        <h5>Vowel Counter</h5>
+      </div>
+      <div class="row input">
+        <div class=" row input-field col s12 col l8 text-field">
+          <input id="vowel" type="text" class="validate">
+          <label for="vowel">Please Type Something</label>
+        </div>
+        <div class="align-center">
+          <div class=" center ">
+            <button class="waves-effect waves-teal btn-flat col m3 col l4 col s12 " id="clear-text"
+              style="border: 0.5px solid #62e1d4 " style="border: 0.5px solid #62e1d4 ">Clear</button>
 
-   </div>
-   <div class="row display">
-    <h6 >No of vowels: <span id="vowelsCount"></span></h6>
-    <h6 > 
-      Vowels : <span id="displayVowels"> </span>
-    </h6>
-   </div>
+            <!-- <a class="waves-effect waves-teal btn-flat  col m4" style="border: 0.5px solid #62e1d4 "> Clear</a> -->
+
+            <div class="col m6  col l4"></div>
+            <button class="btn waves-effect waves-light col s12 col m3 col l4" type="submit" id="displayBtn"
+              name="action">Submit
+              <i class="material-icons right">send</i>
+            </button>
+          </div>
+        </div>
+
+
+
+      </div>
+      <div class="row display">
+        <h6>No of vowels: <span id="vowelsCount"></span></h6>
+        <h6>
+          Vowels : <span id="displayVowels"> </span>
+        </h6>
+      </div>
+    </div>
+
   </div>
   <script src="./js/materialize.min.js"></script>
   <script src="./js/script.js"></script>
 
 </body>
+
 </html>

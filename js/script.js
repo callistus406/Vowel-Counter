@@ -1,4 +1,9 @@
 let displayBtn = document.querySelector("#displayBtn");
+let clearText = document.querySelector("#clear-text");
+
+clearText.addEventListener("click", () => {
+  document.querySelector("#vowel").value = "";
+});
 let counter;
 function vowelCounter(str) {
   counter = 0;
